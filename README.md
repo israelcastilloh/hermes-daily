@@ -26,7 +26,7 @@
 ---
 ### Intro
 
-![image](./images/hermes.png ){ width=30% } 
+![image](./images/hermes.png){ width=30% } 
 
 **Hermes Daily** was conceived as an *educational endeavor*, introducing an AI-backed software solution designed to foster a healthy lifestyle. The primary goal of this project was to enhance the capabilities of the **OpenAI platform**, enabling users to interact with their AI assistant seamlessly through **WhatsApp** for a more accessible communication experience.
 
