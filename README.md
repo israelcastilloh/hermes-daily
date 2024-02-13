@@ -85,7 +85,7 @@ python3 run.py
 5. For security purposes, the YAML config file is deleted once the ngrok connection is established. All of our sensitive variables are stored using **AWS Secrets Manager** and retrieve across our entire project using `boto3` library.
 6. The app is run.
 
-![image](./images/yaml.png){ width=20% }
+![image](./images/yaml.png| width=100)
 
 #### views.py_
 ###### Concepts
