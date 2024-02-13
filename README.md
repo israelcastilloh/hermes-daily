@@ -2,14 +2,12 @@
 
 [Github Repo: israelcastilloh](https://github.com/israelcastilloh/hermes-daily) 
 
-Intro
-
-Prerequisites
-
-Project Structure Overview
-
--run.py_
-    - Concepts
+Markup : 
+*Intro
+*Prerequisites
+*Project Structure Overview
+* run.py_
+    * Concepts
 - Summary
 views.py_
 - Concepts
