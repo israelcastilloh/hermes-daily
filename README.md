@@ -4,24 +4,25 @@
 ---
 ### Table of Contents
 [Github Repo: israelcastilloh](https://github.com/israelcastilloh/hermes-daily) 
-- [[#Intro|Intro]]
-- [[#Prerequisites|Prerequisites]]
-- [[#Project Structure Overview|Project Structure Overview]]
-	- [[#Project Structure Overview#run.py|run.py]]
-			- [[#Concepts|Concepts]]
-			- [[#Summary|Summary]]
-	- [[#Project Structure Overview#views.py|views.py]]
-			- [[#Concepts|Concepts]]
-			- [[#Summary|Summary]]
-	- [[#Project Structure Overview#whatsapp_utils.py|whatsapp_utils.py]]
-			- [[#Concepts|Concepts]]
-			- [[#Summary|Summary]]
-	- [[#Project Structure Overview#spotify_retrieve.py|spotify_retrieve.py]]
-			- [[#Summary|Summary]]
-	- [[#Project Structure Overview#openai_service.py|openai_service.py]]
-			- [[#Concepts|Concepts]]
-			- [[#Summary|Summary]]
-- [[#References|References]]
+
+Intro
+Prerequisites
+Project Structure Overview
+run.py
+	--- Concepts
+	--- Summary
+views.py
+	--- Concepts
+	--- Summary
+whatsapp_utils.py
+	--- Concepts
+	--- Summary
+spotify_retrieve.py
+	--- Summary	
+openai_service.py
+	--- Concepts
+	--- Summary
+References
 
 ---
 ### Intro
