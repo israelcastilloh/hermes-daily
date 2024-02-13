@@ -1,0 +1,7 @@
+authtoken: PLACEHOLDER_AUTHTOKEN
+version: 2
+tunnels:
+  similin_tunnel:
+    proto: http
+    hostname: PLACEHOLDER_HOSTNAME
+    addr: PLACEHOLDER_ADDR
