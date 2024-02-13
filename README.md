@@ -25,15 +25,20 @@
 
 ---
 ### Intro
+
+![image](./images/hermes.png ){ width=30% } 
+
+**Hermes Daily** was conceived as an *educational endeavor*, introducing an AI-backed software solution designed to foster a healthy lifestyle. The primary goal of this project was to enhance the capabilities of the **OpenAI platform**, enabling users to interact with their AI assistant seamlessly through **WhatsApp** for a more accessible communication experience.
+
+The vision was to provide users with diverse options to uplift their mood effortlessly. Whether it's obtaining a quick recipe, accessing a convenient gym routine, or exploring the potential for the **AI assistant** to develop a more nuanced understanding of the user through uploaded information. Although this last aspect remains beyond the current scope of our exercise.
+
+Additionally, a noteworthy feature of Hermes Daily is its integration with **Spotify's API**. This functionality empowers users to request any song recommended by OpenAI and receive the corresponding Spotify URL. This innovative addition aims to infuse a musical flair into users' mornings, ensuring a delightful start to their day.
+
+To run the project, simply clone the repository and execute the following command in your terminal:
+
 ```
 python3 run.py
 ```
-
-**Hermes Daily** was conceived as an educational endeavor, introducing an AI-backed software solution designed to foster a healthy lifestyle. The primary goal of this project was to enhance the capabilities of the OpenAI platform, enabling users to interact with their AI assistant seamlessly through WhatsApp for a more accessible communication experience.
-
-The vision was to provide users with diverse options to uplift their mood effortlessly. Whether it's obtaining a quick recipe, accessing a convenient gym routine, or exploring the potential for the AI assistant to develop a more nuanced understanding of the user through uploaded information—although this last aspect remains beyond the current scope of our exercise.
-
-Additionally, a noteworthy feature of Hermes Daily is its integration with Spotify's API. This functionality empowers users to request any song recommended by OpenAI and receive the corresponding Spotify URL. This innovative addition aims to infuse a musical flair into users' mornings, ensuring a delightful start to their day.
 
 ---
 ![image](./images/openai.png ){ width=20% } ![image](./images/whatsapp.png){ width=10% } ![image](./images/ngrok.png){ width=10% } ![image](./images/spotify.png){ width=20% }
