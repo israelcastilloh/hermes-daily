@@ -1,33 +1,11 @@
 # Hermes Daily
 
-
----
-### Table of Contents
 [Github Repo: israelcastilloh](https://github.com/israelcastilloh/hermes-daily) 
-
-Intro
-Prerequisites
-Project Structure Overview
-run.py
-	--- Concepts
-	--- Summary
-views.py
-	--- Concepts
-	--- Summary
-whatsapp_utils.py
-	--- Concepts
-	--- Summary
-spotify_retrieve.py
-	--- Summary	
-openai_service.py
-	--- Concepts
-	--- Summary
-References
 
 ---
 ### Intro
 
-![image](./images/hermes.png){ width=30% } 
+<img src="./images/hermes.png" width="48">
 
 **Hermes Daily** was conceived as an *educational endeavor*, introducing an AI-backed software solution designed to foster a healthy lifestyle. The primary goal of this project was to enhance the capabilities of the **OpenAI platform**, enabling users to interact with their AI assistant seamlessly through **WhatsApp** for a more accessible communication experience.
 
