@@ -9,7 +9,7 @@ Prerequisites
 Project Structure Overview
 
 -run.py_
--- Concepts
+    - Concepts
 - Summary
 views.py_
 - Concepts
