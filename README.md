@@ -25,9 +25,11 @@ References
 Platforms
 
 ---
-### Intro
+## Intro
 
-<img src="./images/hermes.png" width="30%">
+<p align="center">
+<img src="./images/hermes.png" width="20%">
+</p>
 
 **Hermes Daily** was conceived as an *educational endeavor*, introducing an AI-backed software solution designed to foster a healthy lifestyle. The primary goal of this project was to enhance the capabilities of the **OpenAI platform**, enabling users to interact with their AI assistant seamlessly through **WhatsApp** for a more accessible communication experience.
 
@@ -42,9 +44,11 @@ python3 run.py
 ```
 
 ---
-![image](./images/openai.png ){ width=20% } ![image](./images/whatsapp.png){ width=10% } ![image](./images/ngrok.png){ width=10% } ![image](./images/spotify.png){ width=20% }
+<p align="center">
+<img src="./images/openai.png" width="30%"> <img src="./images/whatsapp.png" width="10%"> <img src="./images/ngrok.png" width="10%"> <img src="./images/spotify.png" width="30%">
+</p>
 
-### Prerequisites
+## Prerequisites
 1. Have an OpenAI with enough funds in it
 2. Have a Meta Developer account 
 3. Have a WhatsApp Business phone number
@@ -52,7 +56,7 @@ python3 run.py
 5. Have a Ngrok Domain account
 6. Have a Spotify account and retrieve API credentials
 ---
-### Project Structure Overview
+## Project Structure Overview
 - README.md
 - app
   - __init__.py
@@ -73,7 +77,7 @@ python3 run.py
 - run.py
 
 ---
-#### run.py_
+### run.py_
 ###### Concepts
 - **Flask** is a micro web framework for Python that is lightweight, modular, and easy to use. It is designed to be simple and easy to understand, making it an excellent choice for building small to medium-sized web applications and APIs
 - **YAML** is a human-readable data serialization format. It stands out for its simplicity and readability, making it easy for both humans and machines to understand. YAML files are commonly used for configuration files, data exchange between languages with different data structures, and writing data that needs to be human-readable.
@@ -86,9 +90,9 @@ python3 run.py
 5. For security purposes, the YAML config file is deleted once the ngrok connection is established. All of our sensitive variables are stored using **AWS Secrets Manager** and retrieve across our entire project using `boto3` library.
 6. The app is run.
 
-![image](./images/yaml.png| width=100)
+<img src="./images/yaml.png" width="30%">
 
-#### views.py_
+### views.py_
 ###### Concepts
 - In Flask, a **Blueprint** is a way to organize a group of related views, templates, and static assets under a single name. It helps modularize and structure large Flask applications by breaking them into smaller, reusable components.
 ###### Summary 
@@ -96,9 +100,9 @@ python3 run.py
 2. The `verify` function handles the verification process for setting up a webhook with WhatsApp. It ensures that the incoming request has the correct parameters and responds accordingly to complete the verification handshake with WhatsApp's webhook system.
 3. The `handle message` function code handles incoming WhatsApp API events, checks for WhatsApp status updates, processes valid WhatsApp messages, and returns appropriate JSON responses and HTTP status codes based on the outcome of the processing. It leads us straigh to the function `process_whatsapp_message` 
 
-![image](./images/views.png ){ width=20% } 
+<img src="./images/views.png" width="30%">
 
-#### whatsapp_utils.py
+### whatsapp_utils.py
 ###### Concepts
 - **API** is a set of rules and tools that allows different software applications to communicate with each other. It defines the methods and data formats that applications can use to request and exchange information. APIs enable developers to access the functionality or data of a service, library, or application without requiring direct access to its internal code.
 ###### Summary 
@@ -109,9 +113,10 @@ This part of the code determines the behavior the response is going to have, int
 4. The OpenAI **Assistant** has a *Hermes_Daily.docx* file that can be modified to enforce certain behaviors.
 5. The function that handles all OpenAI operations is `generate_open_ai_respone` 
 
-![image](./images/template.png ){ width=50% } 
+<img src="./images/template.png" width="30%">
 
-#### spotify_retrieve.py
+
+### spotify_retrieve.py
 ###### Summary
 1. **Replace Unnecessary Text:** It removes unnecessary text formatting (such as code blocks) from the provided prompt.
 2. **Spotify API Token Retrieval:** It retrieves an access token from the Spotify API using the provided Spotify client ID and client secret through a POST request to the token endpoint.
@@ -120,10 +125,11 @@ This part of the code determines the behavior the response is going to have, int
 5. **Extract External URL:** It extracts the external URL for the top matching track from the Spotify API response.
 6. **Return Result:** It constructs a return text that includes the song title, artist, and the obtained external URL. If the URL is not available or an error occurs during the process, it returns a message indicating that the URL is not available.
 
-![image](./images/spotify_retrieve.png ){ width=30% } ![image](./images/food.png ){ width=30% } 
-![image](./images/open_prompt.png ){ width=50% } 
+<img src="./images/spotify_retrieve.png" width="30%"> 
+<img src="./images/food.png" width="30%">
+<img src="./images/open_prompt.png" width="30%">
 
-#### openai_service.py
+### openai_service.py
 ###### Concepts
 - The **Assistants** API allows you to build AI assistants within your own applications. An Assistant has instructions and can leverage models, tools, and knowledge to respond to user queries.
 - A **Thread** represents a conversation. You can add as many Messages as you want to a Thread. The Assistant will ensure that requests to the model fit within the maximum context window.
@@ -135,16 +141,16 @@ This part of the code determines the behavior the response is going to have, int
 4. **Run Assistant (`run_assistant` function):** The `run_assistant` function interacts with an OpenAI Assistant. It fetches the chosen assistant through the OpenAI API, starts a new run within a thread, and waits for the run to finish. After completion, it retrieves the generated message from the assistant within the thread, logs it, and returns the new message.
 5. **Generate Response (`generate_response` function):** The `generate_response` function takes a message, WhatsApp ID (`wa_id`), and name as inputs. It checks if there's an existing thread ID for the given WhatsApp ID using `check_if_thread_exists`. If no thread exists, it creates a new one via the OpenAI API and stores the thread ID. If a thread exists, it retrieves the existing thread. The function adds the incoming user message to the thread using the OpenAI API, calls `run_assistant` to interact with the assistant, and gets the generated response. The new message is then returned.
 
-![image](./images/assistants.png ){ width=40% } 
-![image](./images/threads.png ){ width=30% }  
+<img src="./images/assistants.png" width="30%">
+<img src="./images/threads.png" width="30%">
 
 ---
-### To-Do
+## To-Do
 1. Containerize this project with Docker
 2. Set this project up and running in an EC2 instance
 
 
 ---
-### References
+## References
 1. Educational source [daveebbelaar](https://github.com/daveebbelaar/python-whatsapp-bot/tree/main)
 2. Ngrok [Documentation](https://ngrok.com/docs#tunnel-definitions)
