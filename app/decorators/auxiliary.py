@@ -32,11 +32,6 @@ def get_secret():
     return secret
 
 
-#israelch-development
-#023998530207
-
-
-
 def create_config_yaml():
     secrets = json.loads(get_secret())
     template_file_path = './data/config_template.yml'
